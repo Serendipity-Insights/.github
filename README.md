@@ -11,11 +11,11 @@ architecture-beta
     service sai(server)[Serendipity AI] in serendipity
     service sauth(server)[Serendipity Auth] in serendipity
 
-    sfrontend:B --> T:sauth
-    sauth:B --> T:suser
-    sauth:B --> T:sai
-    sauth:B --> T:srecipe
+    sfrontend:R --> L:sauth
+    sauth:R --> L:suser
+    sauth:R --> L:sai
+    sauth:R --> L:srecipe
 
-    align row sai suser srecipe
-    align column sfrontend sauth suser
+    align column sai suser srecipe
+    align row sfrontend sauth suser
 ```
