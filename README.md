@@ -1,2 +1,9 @@
-# .github
-Repository used for organization customization and management. Only config files should be placed here.
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
